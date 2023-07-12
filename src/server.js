@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
 app.get('/api/logic.js', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'src', 'api', 'logic.js'));
 });
+app.get('/api/select.js', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'src', 'api', 'select.js'));
+});
 
 const port = 3000;
 app.listen(port, () => {

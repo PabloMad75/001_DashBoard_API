@@ -15,31 +15,24 @@
     <main>
       <section class="section__main">
         <h2>Indicadores financieros.</h2>
-        <form action="">
+        <form id="form__main">
           <label for="select__data">Indicador a consultar:</label>
           <select name="select__data" id="select__data">
-            <option value="" disabled selected>Seleccione indicador</option>
-            <option value="volvo">Unidad de Fomento UF</option>
-            <option value="saab">Indice de valor promedio (IVP)</option>
-            <option value="opel">Dólar observado</option>
-            <option value="audi">Euro</option>
-            <option value="audi">Unidad Tributaria Mensual (UTM)</option>
-            <option value="audi">Libra de Cobre</option>
+            <option value="" selected>Seleccione indicador</option>
           </select>
-          <input type="submit" class='btn-solid' value="Consultar">
+          <input type="submit" class='btn-solid' id="btnconsult" value="Consultar">
         </form>
       </section>
       <hr>
-      <canvas>
-        
+      <canvas id="myChart">
       </canvas>
-
     </main>
     <footer class="footer__base">
       <p>2023 <a href="https://github.com/PabloMad75">©PabloMad.</a></p>
       <p><a href="https://mindicador.cl/">API desde www.mindicador.cl</a></p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/api/select.js"></script>
     <script src="/api/logic.js"></script>
   </body>
 </html>
