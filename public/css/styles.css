@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  padding: 15px;
+  background-color: #FFD9C0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.section__error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+main{
+  background-color: #FAF0D7;
+  height:75vh;
+  padding: 15px;
+}
+/* .section__main{
+  padding: 20px;
+   
+}*/
+
+form{
+  padding: 10px 0px;
+}
+
+select {
+  font-size: 15px;
+  padding: 5px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+hr{
+  margin-top: 10px;
+}
+
+.imagen{
+  padding: 0;
+  width: 35%;
+}
+
+a{
+  text-decoration: none;
+}
+
+button, .btn-solid
+{
+  cursor: pointer;
+}
+
+.btn-solid {
+  margin-top: 10px;
+  background-color: #3389ff;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  line-height: 34px;
+  font-weight: bold;
+  transition: background-color 0.1s ease-out;
+  border-radius: 2px;
+  background-clip: padding-box;
+  display: inline-block;
+  height: 34px;
+  padding: 0 13px;
+  font-family: "ProximaNova", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.footer__base{
+  background-color: #FFD9C0;
+  padding: 15px;
+  text-align: center;
+}
+
+.footer__base a {
+  text-decoration: none;
+  color: inherit;
+}
