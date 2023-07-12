@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300;1,700&display=swap');
 
-*{
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -8,7 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-header{
+header {
   padding: 15px;
   background-color: #FFD9C0;
   display: flex;
@@ -26,17 +26,12 @@ header{
   text-align: center;
 }
 
-main{
+main {
   background-color: #FAF0D7;
-  height:75vh;
-  padding: 15px;
+  /* padding: 15px; */
 }
-/* .section__main{
-  padding: 20px;
-   
-}*/
 
-form{
+form {
   padding: 10px 0px;
 }
 
@@ -54,21 +49,32 @@ select option {
   color: #333;
 }
 
-hr{
+hr {
   margin-top: 10px;
 }
 
-.imagen{
+.imagen {
   padding: 0;
   width: 35%;
 }
 
-a{
+a {
   text-decoration: none;
 }
+.section__graph{
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
 
-button, .btn-solid
-{
+/* .chart-canvas{
+  width: auto !important ; 
+  height: auto !important;  
+  padding-bottom: 50px!important;
+} */
+
+button,
+.btn-solid {
   cursor: pointer;
 }
 
@@ -96,9 +102,9 @@ button, .btn-solid
   user-select: none;
 }
 
-.footer__base{
+.footer__base {
   background-color: #FFD9C0;
-  padding: 15px;
+  padding: 20px 0;
   text-align: center;
 }
 

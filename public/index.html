@@ -24,15 +24,17 @@
         </form>
       </section>
       <hr>
-      <canvas id="grafico">
-      </canvas>
+      <section class="section__graph">
+        <canvas id="canvas" class="chart-canvas">
+        </canvas>
+      </section>
     </main>
     <footer class="footer__base">
       <p>2023 <a href="https://github.com/PabloMad75">©PabloMad.</a></p>
       <p><a href="https://mindicador.cl/">API desde www.mindicador.cl</a></p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/api/select.js"></script>
-    <script src="/api/logic.js"></script>
+    <script src="/api/logic.js" type="module"></script>
   </body>
 </html>
