@@ -69,6 +69,7 @@ a {
   display: flex;
   justify-content: center;
   min-height: 58vh;
+  max-height: 75vh;
   /* flex-direction: column; */
 }
 
