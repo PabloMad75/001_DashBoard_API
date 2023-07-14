@@ -28,11 +28,11 @@ app.get('/api/functions.js', (req, res) => {
 });
 
 // Ruta para página no encontrada
-app.use((req, res) => {
+app.get('*', (req, res) => {
   res.status(404).sendFile(path.join(__dirname, '..', 'public', '404.html'));
 });
 
 // Configuracion del puerto de escucha y lanza servidor
-app.listen(port, () => {
+app.listen(process.env.port || port, () => {
   console.log(`Servidor en línea en el puerto http://localhost:${port}`);
 });

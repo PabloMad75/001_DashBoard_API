@@ -8,6 +8,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  
+}
+
 header {
   padding: 15px;
   background-color: #FFD9C0;
@@ -49,9 +53,9 @@ select option {
   color: #333;
 }
 
-hr {
+/* hr {
   margin-top: 10px;
-}
+} */
 
 .imagen {
   padding: 0;
@@ -64,9 +68,13 @@ a {
 .section__graph{
   display: flex;
   justify-content: center;
-  height: 75vh;
+  min-height: 58vh;
+  /* flex-direction: column; */
 }
 
+.section__main{
+padding: 15px;
+}
 /* .chart-canvas{
   width: auto !important ; 
   height: auto !important;  

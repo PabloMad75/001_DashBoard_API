@@ -1,9 +1,8 @@
-import { getDataAndPopulateSelect, getData, createGrafico } from "./functions.js";
+import { getDataAndPopulateSelect, getData, createGrafico, formatDataSerie } from "./functions.js";
 
 const btnConsult = document.getElementById("btnconsult");
 const canvas = document.getElementById("canvas");
-let informacionFinanciera, dataFecha = [];
-let unidadMedida;
+let informacionFinanciera = [];
 
 // Llama a la función para obtener los datos y completar el <select> HTML
 getDataAndPopulateSelect();
@@ -19,13 +18,11 @@ btnConsult.addEventListener("click", function (event) {
     // Llamo a la funcion getData con un parametro obtenido del combo select
     getData(selectedValue)
       .then((data) => {
-        console.log(data);
-        unidadMedida=data.unidad_medida;
-        informacionFinanciera = data.serie;
-        createGrafico(informacionFinanciera.reverse(),selectedValue,unidadMedida);
-        console.log(informacionFinanciera);
-        console.log('unidad de medida:'+unidadMedida);
         // Realiza las operaciones que necesites con los datos obtenidos
+        console.log(data);
+        informacionFinanciera = formatDataSerie(data.serie);
+        createGrafico(informacionFinanciera.reverse(),data.nombre,data.unidad_medida);
+        console.log(informacionFinanciera);
       })
       .catch((error) => {
         console.error(error);
@@ -34,4 +31,6 @@ btnConsult.addEventListener("click", function (event) {
     return;
   }
 });
+
+
 
