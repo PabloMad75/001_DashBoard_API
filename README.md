@@ -24,7 +24,7 @@ El objetivo de este proyecto es mostrar de forma visual los indicadores económi
 
 ---
 ## Imagen
-![DashBoard_Finanzas](https://github.com/PabloMad75/001_DashBoard_API/DashBoard_API.png)
+![DashBoard_Finanzas](https://github.com/PabloMad75/001_DashBoard_API/public/images/DashBoard_API.png)
 ![CRUD_LocalStorage](https://github.com/PabloMad75/001_CRUD_LocalStorage/assets/126835515/0382104e-9b5a-4e03-8d6f-1ef193cc9a8e)
 
 ---
