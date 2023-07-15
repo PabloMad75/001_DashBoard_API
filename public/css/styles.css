@@ -8,9 +8,7 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body{
-  
-}
+body {}
 
 header {
   padding: 15px;
@@ -65,7 +63,8 @@ select option {
 a {
   text-decoration: none;
 }
-.section__graph{
+
+.section__graph {
   display: flex;
   justify-content: center;
   min-height: 58vh;
@@ -73,9 +72,10 @@ a {
   /* flex-direction: column; */
 }
 
-.section__main{
-padding: 15px;
+.section__main {
+  padding: 15px;
 }
+
 /* .chart-canvas{
   width: auto !important ; 
   height: auto !important;  
@@ -111,13 +111,49 @@ button,
   user-select: none;
 }
 
+/* 
 .footer__base {
-  background-color: #FFD9C0;
-  padding: 20px 0;
+  
   text-align: center;
-}
+}*/
 
 .footer__base a {
   text-decoration: none;
   color: inherit;
+}
+
+.footer__base {
+  background-color: #FFD9C0;
+  padding: 20px 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+.footer__base p {
+  margin-bottom: 5px;
+}
+
+.footer__base a:hover {
+  color: #FF6666;
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

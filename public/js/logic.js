@@ -1,4 +1,9 @@
-import  { getDataAndPopulateSelect, getData, createGrafico, formatDataSerie } from './functions.js'
+import {
+  getDataAndPopulateSelect,
+  getData,
+  createGrafico,
+  formatDataSerie,
+} from "./functions.js";
 
 const btnConsult = document.getElementById("btnconsult");
 const canvas = document.getElementById("canvas");
@@ -20,7 +25,11 @@ btnConsult.addEventListener("click", function (event) {
       .then((data) => {
         console.log(data);
         informacionFinanciera = formatDataSerie(data.serie);
-        createGrafico(informacionFinanciera.reverse(), data.nombre, data.unidad_medida);
+        createGrafico(
+          informacionFinanciera.reverse(),
+          data.nombre,
+          data.unidad_medida
+        );
         console.log(informacionFinanciera);
       })
       .catch((error) => {

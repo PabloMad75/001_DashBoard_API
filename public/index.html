@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/finanzas.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>PROYECTO 3: Dashboard Finanzas</title>
-  </head>
-  <body>
-    <header>
-      <img src="/images/finanzas.png" width="75" alt="">
-      <h1>PROYECTO 3: Dashboard Finanzas</h1>
-    </header>
-    <main>
-      <section class="section__main">
-        <h2>Indicadores financieros.</h2>
-        <form id="form__main">
-          <label for="select__data">Indicador a consultar:</label>
-          <select name="select__data" id="select__data">
-            <option value="" selected>Seleccione indicador</option>
-          </select>
-          <input type="button" class='btn-solid' id="btnconsult" value="Consultar">
-        </form>
-      </section>
-      <hr>
-      <section class="section__graph">
-        <canvas id="canvas" class="chart-canvas">
-        </canvas>
-      </section>
-    </main>
-    <footer class="footer__base">
-      <p>2023 <a href="https://github.com/PabloMad75">©PabloMad.</a></p>
-      <p><a href="https://mindicador.cl/">API desde www.mindicador.cl</a></p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="/js/logic.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/images/finanzas.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>PROYECTO 3: Dashboard Finanzas</title>
+</head>
+
+<body>
+  <header>
+    <img src="/images/finanzas.png" width="75" alt="">
+    <h1>PROYECTO 3: Dashboard Finanzas</h1>
+  </header>
+  <main>
+    <section class="section__main">
+      <h2>Indicadores financieros.</h2>
+      <form id="form__main">
+        <label for="select__data">Indicador a consultar:</label>
+        <select name="select__data" id="select__data">
+          <option value="" selected>Seleccione indicador</option>
+        </select>
+        <input type="button" class='btn-solid' id="btnconsult" value="Consultar">
+      </form>
+    </section>
+    <hr>
+    <section class="section__graph">
+      <div class="spinner"></div>
+      <canvas id="canvas" class="chart-canvas">
+      </canvas>
+    </section>
+  </main>
+  <footer class="footer__base">
+    <p>2023 <a href="https://github.com/PabloMad75">©PabloMad.</a></p>
+    <p><a href="https://mindicador.cl/">API desde www.mindicador.cl</a></p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/js/logic.js" type="module"></script>
+</body>
+
 </html>
